@@ -275,6 +275,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  background: transparent;
   z-index: 999;
 }
 .header__row {
@@ -348,7 +349,7 @@ body {
   border-bottom: 0.2rem solid rgba(242, 153, 74, 0.5);
 }
 
-main {
+.main {
   position: relative;
   background: transparent;
   background: linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%);
@@ -488,13 +489,13 @@ main {
   left: 0;
   top: -10rem;
   height: 100%;
-  background: url(../images/stratPage/start-box/rain-left2.svg) no-repeat center;
+  background: url(../../images/stratPage/start-box/rain-left2.svg) no-repeat center;
 }
 .service-section::after {
   right: 0;
   bottom: -10rem;
   height: 100%;
-  background: url(../images/stratPage/start-box/rain-right.png) no-repeat center;
+  background: url(../../images/stratPage/start-box/rain-right.png) no-repeat center;
 }
 
 .services {
@@ -556,55 +557,55 @@ main {
   right: 0;
 }
 
-.sip-section {
+.ip-section {
   padding: 5rem 0;
   position: relative;
   z-index: 9;
 }
 
-.sip {
+.ip {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.sip__block {
+.ip__block {
   width: 47rem;
   height: 27rem;
   margin-right: 5.8rem;
 }
-.sip__block-title {
+.ip__block-title {
   margin-bottom: 3.2rem;
   text-align: left;
   line-height: 1.2;
 }
-.sip__block-title span {
+.ip__block-title span {
   color: #f2994A;
 }
-.sip__block-text {
+.ip__block-text {
   margin-bottom: 4.3rem;
   line-height: 1.2;
 }
-.sip__right {
+.ip__right {
   display: block;
   position: relative;
   width: 44rem;
   height: 40rem;
 }
-.sip__right-elem--first {
+.ip__right-elem--first {
   position: absolute;
   left: 0;
   top: 1.8rem;
   width: 23.2rem;
   height: 22.5rem;
   border-radius: .9rem;
-  background: url(../images/stratPage/sip/2.png) no-repeat center;
+  background: url(../../images/stratPage/ip/2.png) no-repeat center;
   background-size: cover;
   box-shadow: -0.715rem 1.43rem 5.363rem rgba(82, 114, 139, 0.24);
   z-index: 4;
 }
-.sip__right-elem--second {
+.ip__right-elem--second {
   position: absolute;
   bottom: 0;
   left: 14rem;
@@ -614,84 +615,97 @@ main {
   border-radius: .9rem;
   z-index: 5;
 }
-.sip__right-elem--second img {
+.ip__right-elem--second img {
   width: 4.1rem;
   height: 2.1rem;
 }
-.sip__right-elem--third {
+.ip__right-elem--third {
   position: absolute;
   width: 28.6rem;
   height: 35.75rem;
   right: 4.7rem;
   top: 0;
   border-radius: 1rem;
-  background: url(../images/stratPage/sip/3.png) no-repeat center;
+  background: url(../../images/stratPage/ip/3.jpg) no-repeat center;
   background-size: cover;
   z-index: 3;
 }
-.sip__right-elem--fourth {
+.ip__right-elem--fourth {
   position: absolute;
   right: 0;
   bottom: 0;
   width: 14rem;
   height: 15.3rem;
-  background: url(../images/stratPage/sip/4.png) no-repeat center;
+  background: url(../../images/stratPage/ip/4.png) no-repeat center;
   background-size: cover;
   z-index: 2;
 }
 
-.sipContent-section {
+.ipContent-section {
   padding: 5rem 0;
+  position: relative;
+  z-index: 1;
+}
+.ipContent-section::after {
+  content: '';
+  position: absolute;
+  width: 40rem;
+  height: 56.7rem;
+  top: 0;
+  left: 0;
+  background: url(../../images/stratPage/ip/bg-left.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
 }
 
-.sipContent {
+.ipContent {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 9;
 }
-.sipContent::before {
+.ipContent::before {
   content: '';
   width: 40rem;
   height: 56.7rem;
   position: absolute;
   left: -10rem;
   top: 0;
-  background: url(../images/stratPage/sip/bg-left.png) no-repeat center;
+  background: url(../../images/stratPage/ip/bg-left.png) no-repeat center;
   z-index: -1;
 }
-.sipContent-title {
+.ipContent-title {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 4rem;
   text-transform: uppercase;
 }
-.sipContent-title span {
+.ipContent-title span {
   color: var(--orange);
 }
-.sipContent-text {
+.ipContent-text {
   text-align: center;
   margin-bottom: 6rem;
 }
-.sipContent__blocks {
+.ipContent__blocks {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.sipContent__block {
+.ipContent__block {
   width: 29.1rem;
   height: 11.8rem;
   text-align: center;
   padding: 0 1.3rem;
 }
-.sipContent__block-num {
+.ipContent__block-num {
   display: inline-block;
   font-size: 3.6rem;
   line-height: 1.2;
   letter-spacing: 0.33px;
   margin-bottom: 1.6rem;
 }
-.sipContent__block-text {
+.ipContent__block-text {
   line-height: 1.4;
 }
 
@@ -757,7 +771,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  background: url(../images/stratPage/vats/earth.png) no-repeat top;
+  background: url(../../images/stratPage/vats/earth.png) no-repeat top;
   background-size: cover;
   z-index: -1;
 }
@@ -932,7 +946,7 @@ main {
   top: -18rem;
   right: -45rem;
   transform: rotate(0);
-  background-image: url(../images/stratPage/helper/bg-right.svg);
+  background-image: url(../../images/stratPage/helper/bg-right.svg);
   background-size: cover;
   opacity: 0.5;
   z-index: 0;
@@ -959,7 +973,7 @@ main {
   height: 6.2rem;
   top: -4rem;
   left: -8rem;
-  background-image: url(../images/stratPage/helper/2.png);
+  background-image: url(../../images/stratPage/helper/2.png);
   background-size: cover;
   opacity: .8;
   z-index: 1;
@@ -970,7 +984,7 @@ main {
   height: 6.1rem;
   bottom: 10rem;
   right: -5rem;
-  background-image: url(../images/stratPage/helper/1.png);
+  background-image: url(../../images/stratPage/helper/1.png);
   background-size: cover;
   opacity: .8;
   z-index: 1;
@@ -981,7 +995,7 @@ main {
   height: 10.7rem;
   left: -6.5rem;
   bottom: 10rem;
-  background-image: url(../images/stratPage/helper/3.png);
+  background-image: url(../../images/stratPage/helper/3.png);
   background-size: cover;
   opacity: .8;
   z-index: 1;
@@ -1028,11 +1042,24 @@ main {
 }
 
 .formEmail-section {
-  min-height: 100vh;
+  padding: 5rem 0;
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+}
+.formEmail-section::after {
+  content: '';
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../../images/stratPage/bg-button.png) no-repeat center;
+  background-size: cover;
+  z-index: 0;
 }
 
 .formEmail {
@@ -1046,22 +1073,13 @@ main {
   margin-top: auto;
   margin-bottom: auto;
 }
-.formEmail::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url(../images/stratPage/bg-button.png) no-repeat center;
-  z-index: 0;
-}
 .formEmail__block {
   position: relative;
   padding: 5.5rem 0;
+  margin: 0 4rem;
   width: 100%;
-  background: rgba(60, 62, 125, 0.19);
-  backdrop-filter: blur(134px);
+  background: rgba(60, 62, 125, 0.4);
+  backdrop-filter: blur(0.5rem);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -1125,6 +1143,18 @@ main {
   letter-spacing: 0.2px;
 }
 
+.main-ip {
+  position: relative;
+  background: transparent;
+  background: linear-gradient(120.26deg, #4e3370 1.22%, #0c195f 82.28%);
+}
+
+.ip-section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 7rem 0;
+}
+
 .footer-section {
   padding: 7rem 0 3rem;
   width: 100%;
@@ -1141,7 +1171,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../images/stratPage/bg-footer.png) no-repeat center;
+  background: url(../../images/stratPage/bg-footer.png) no-repeat center;
   background-size: cover;
   z-index: -1;
 }
