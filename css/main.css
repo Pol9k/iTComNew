@@ -396,7 +396,7 @@ body {
 .titleSection__text-bottom {
   font-size: 1.8rem;
   line-height: 1.8;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   color: var(--blue2-p);
   max-width: 50rem;
 }
@@ -413,23 +413,6 @@ body {
   margin-right: 0.5rem;
   color: #99EFD0;
   font-size: 1.2rem;
-}
-.titleSection__text-about {
-  width: 100%;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.titleSection__text-about--img {
-  max-width: 6rem;
-  width: 90%;
-  padding: 1rem;
-  cursor: pointer;
-}
-.titleSection__text-about--inner {
-  width: 100%;
-  padding-left: 2rem;
 }
 .titleSection__img {
   max-width: 20rem;
