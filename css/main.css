@@ -198,6 +198,7 @@ select {
 
 :root {
   --blue-p: #8476AA;
+  --blue2-p: #a08fce;
   --blue-h1: #99EFD0;
   --orange: #f2994A;
   --ff-h: 'Inter', sans-serif;
@@ -396,6 +397,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 2rem;
+  color: var(--blue2-p);
   max-width: 50rem;
 }
 .titleSection__text-bottom--block {
@@ -405,7 +407,7 @@ body {
 }
 .titleSection__text-bottom--block li {
   margin: 0 2rem;
-  color: #99EFD0;
+  color: var(--blue2-p);
 }
 .titleSection__text-bottom--block i {
   margin-right: 0.5rem;
@@ -437,16 +439,16 @@ body {
 }
 .titleSection__img-image {
   position: absolute;
-  top: -15rem;
-  right: 0;
+  top: -5rem;
+  right: -5rem;
   width: 45rem;
   z-index: 1;
   animation: menMove 3s infinite;
 }
 .titleSection__img-shadow {
   position: absolute;
-  top: -15rem;
-  right: 1rem;
+  top: -6rem;
+  right: -4rem;
   width: 40rem;
   z-index: 1;
   opacity: .7;
