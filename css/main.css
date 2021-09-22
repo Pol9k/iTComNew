@@ -224,10 +224,10 @@ body {
 
 .title-big {
   font-size: 6.5rem;
-  line-height: .9;
+  line-height: 1.2;
   font-family: var(--ff-text);
   color: var(--blue-h1);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -.1rem;
 }
 
@@ -384,19 +384,35 @@ body {
   font-size: 1.8rem;
 }
 .titleSection__text-title {
-  margin-bottom: 4rem;
+  padding: 3rem 0;
+  line-height: 1.2;
 }
 .titleSection__text-title span {
   color: #f2994A;
+  font-size: 6rem;
+  text-decoration: underline;
 }
 .titleSection__text-bottom {
   font-size: 1.8rem;
   line-height: 1.8;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   max-width: 50rem;
 }
+.titleSection__text-bottom--block {
+  display: flex;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+.titleSection__text-bottom--block li {
+  margin: 0 2rem;
+  color: #99EFD0;
+}
+.titleSection__text-bottom--block i {
+  margin-right: 0.5rem;
+  color: #99EFD0;
+  font-size: 1.2rem;
+}
 .titleSection__text-about {
-  max-width: 44rem;
   width: 100%;
   margin-top: 3rem;
   display: flex;
@@ -405,12 +421,11 @@ body {
 }
 .titleSection__text-about--img {
   max-width: 6rem;
-  width: 100%;
+  width: 90%;
   padding: 1rem;
   cursor: pointer;
 }
 .titleSection__text-about--inner {
-  max-width: 40rem;
   width: 100%;
   padding-left: 2rem;
 }
@@ -422,17 +437,17 @@ body {
 }
 .titleSection__img-image {
   position: absolute;
-  top: -10rem;
+  top: -15rem;
   right: 0;
-  width: 50rem;
+  width: 45rem;
   z-index: 1;
   animation: menMove 3s infinite;
 }
 .titleSection__img-shadow {
   position: absolute;
-  top: -8rem;
-  right: -5rem;
-  width: 50rem;
+  top: -15rem;
+  right: 1rem;
+  width: 40rem;
   z-index: 1;
   opacity: .7;
   animation: opacityRain 5s infinite, menMove 3s infinite;
@@ -441,16 +456,16 @@ body {
 
 @keyframes menMove {
   0% {
-    transform: translateX(0.5rem);
+    transform: translateX(0.3rem);
   }
   30% {
-    transform: translateX(0.1rem);
+    transform: translateX(0.05rem);
   }
   50% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(0.5rem);
+    transform: translateX(0.3rem);
   }
 }
 @keyframes opacityRain {
