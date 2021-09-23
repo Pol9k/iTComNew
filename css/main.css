@@ -489,13 +489,13 @@ body {
   left: 0;
   top: -10rem;
   height: 100%;
-  background: url(../../images/stratPage/start-box/rain-left2.svg) no-repeat center;
+  background: url(../images/stratPage/start-box/rain-left2.svg) no-repeat center;
 }
 .service-section::after {
   right: 0;
   bottom: -10rem;
   height: 100%;
-  background: url(../../images/stratPage/start-box/rain-right.png) no-repeat center;
+  background: url(../images/stratPage/start-box/rain-right.png) no-repeat center;
 }
 
 .services {
@@ -600,7 +600,7 @@ body {
   width: 23.2rem;
   height: 22.5rem;
   border-radius: .9rem;
-  background: url(../../images/stratPage/ip/2.png) no-repeat center;
+  background: url(../images/stratPage/ip/2.png) no-repeat center;
   background-size: cover;
   box-shadow: -0.715rem 1.43rem 5.363rem rgba(82, 114, 139, 0.24);
   z-index: 4;
@@ -626,7 +626,7 @@ body {
   right: 4.7rem;
   top: 0;
   border-radius: 1rem;
-  background: url(../../images/stratPage/ip/3.jpg) no-repeat center;
+  background: url(../images/stratPage/ip/3.jpg) no-repeat center;
   background-size: cover;
   z-index: 3;
 }
@@ -636,7 +636,7 @@ body {
   bottom: 0;
   width: 14rem;
   height: 15.3rem;
-  background: url(../../images/stratPage/ip/4.png) no-repeat center;
+  background: url(../images/stratPage/ip/4.png) no-repeat center;
   background-size: cover;
   z-index: 2;
 }
@@ -653,7 +653,7 @@ body {
   height: 56.7rem;
   top: 0;
   left: 0;
-  background: url(../../images/stratPage/ip/bg-left.png) no-repeat center;
+  background: url(../images/stratPage/ip/bg-left.png) no-repeat center;
   background-size: cover;
   z-index: -1;
 }
@@ -671,7 +671,7 @@ body {
   position: absolute;
   left: -10rem;
   top: 0;
-  background: url(../../images/stratPage/ip/bg-left.png) no-repeat center;
+  background: url(../images/stratPage/ip/bg-left.png) no-repeat center;
   z-index: -1;
 }
 .ipContent-title {
@@ -773,7 +773,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background: url(../../images/stratPage/vats/earth.png) no-repeat top;
+  background: url(../images/stratPage/vats/earth.png) no-repeat top;
   background-size: cover;
   z-index: -1;
 }
@@ -948,7 +948,7 @@ body {
   top: -18rem;
   right: -45rem;
   transform: rotate(0);
-  background-image: url(../../images/stratPage/helper/bg-right.svg);
+  background-image: url(../images/stratPage/helper/bg-right.svg);
   background-size: cover;
   opacity: 0.5;
   z-index: 0;
@@ -975,7 +975,7 @@ body {
   height: 6.2rem;
   top: -4rem;
   left: -8rem;
-  background-image: url(../../images/stratPage/helper/2.png);
+  background-image: url(../images/stratPage/helper/2.png);
   background-size: cover;
   opacity: .8;
   z-index: 1;
@@ -986,7 +986,7 @@ body {
   height: 6.1rem;
   bottom: 10rem;
   right: -5rem;
-  background-image: url(../../images/stratPage/helper/1.png);
+  background-image: url(../images/stratPage/helper/1.png);
   background-size: cover;
   opacity: .8;
   z-index: 1;
@@ -997,7 +997,7 @@ body {
   height: 10.7rem;
   left: -6.5rem;
   bottom: 10rem;
-  background-image: url(../../images/stratPage/helper/3.png);
+  background-image: url(../images/stratPage/helper/3.png);
   background-size: cover;
   opacity: .8;
   z-index: 1;
@@ -1059,7 +1059,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../../images/stratPage/bg-button.png) no-repeat center;
+  background: url(../images/stratPage/bg-button.png) no-repeat center;
   background-size: cover;
   z-index: 0;
 }
@@ -1173,7 +1173,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url(../../images/stratPage/bg-footer.png) no-repeat center;
+  background: url(../images/stratPage/bg-footer.png) no-repeat center;
   background-size: cover;
   z-index: -1;
 }
