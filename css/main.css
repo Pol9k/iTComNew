@@ -1233,6 +1233,7 @@ body {
 .footer__block-locashion--wrap---phones {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 .footer__block-locashion--wrap---timetable {
   display: flex;
@@ -1241,6 +1242,7 @@ body {
 .footer__block-locashion--mail {
   text-align: center;
   margin-top: 3rem;
+  cursor: pointer;
 }
 .footer__copyright {
   position: absolute;
