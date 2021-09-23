@@ -1185,14 +1185,14 @@ body {
   z-index: 9;
 }
 
-.footer-block {
+.footer {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9;
 }
-.footer-block__block {
+.footer__block {
   position: relative;
   margin-bottom: 4rem;
   height: 100%;
@@ -1204,52 +1204,52 @@ body {
   border-top: 0.2rem solid rgba(0, 0, 0, 0.3);
   z-index: 9;
 }
-.footer-block__block-case {
+.footer__block-case {
   display: flex;
   width: 49%;
   height: 19rem;
   justify-content: space-between;
   flex-direction: column;
 }
-.footer-block__block-case--title {
+.footer__block-case--title {
   margin-bottom: 1.5rem;
 }
-.footer-block__block-locashion {
+.footer__block-locashion {
   padding-left: 2rem;
   width: 50%;
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
 }
-.footer-block__block-locashion--adress {
+.footer__block-locashion--adress {
   margin-bottom: 1.5rem;
   text-align: right;
 }
-.footer-block__block-locashion--wrap {
+.footer__block-locashion--wrap {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-.footer-block__block-locashion--wrap---phones {
+.footer__block-locashion--wrap---phones {
   display: flex;
   flex-direction: column;
   cursor: pointer;
 }
-.footer-block__block-locashion--wrap---timetable {
+.footer__block-locashion--wrap---timetable {
   display: flex;
   flex-direction: column;
 }
-.footer-block__block-locashion--mail {
+.footer__block-locashion--mail {
   text-align: center;
   margin-top: 3rem;
   cursor: pointer;
   display: flex;
   flex-direction: column;
 }
-.footer-block__block-locashion--mail a:last-child {
+.footer__block-locashion--mail a:last-child {
   margin-top: 1rem;
 }
-.footer-block__copyright {
+.footer__copyright {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1259,7 +1259,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.footer-block__copyright p {
+.footer__copyright p {
   margin: 1rem;
 }
 
