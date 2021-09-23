@@ -685,16 +685,18 @@ body {
 }
 .ipContent-text {
   text-align: center;
-  margin-bottom: 6rem;
+  max-width: 80%;
+  margin: 0 auto;
 }
 .ipContent__blocks {
+  margin-top: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .ipContent__block {
-  width: 29.1rem;
-  height: 11.8rem;
+  width: 34rem;
+  height: 20rem;
   text-align: center;
   padding: 0 1.3rem;
 }
