@@ -1243,6 +1243,8 @@ body {
   text-align: center;
   margin-top: 3rem;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 .footer__block-locashion--mail a:last-child {
   margin-top: 1rem;
