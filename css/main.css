@@ -1482,6 +1482,10 @@ body {
     padding-top: 5rem;
   }
 
+  .titleSection__text {
+    padding-top: 4rem;
+  }
+
   .titleSection__text-title {
     text-align: left;
     font-size: 5rem;
