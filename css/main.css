@@ -607,7 +607,7 @@ body {
   z-index: 9;
 }
 .services-title {
-  margin-bottom: 1.3rem;
+  margin-bottom: 2rem;
 }
 .services-text {
   text-align: center;
@@ -634,12 +634,13 @@ body {
   font-size: 1.5rem;
   line-height: 1.2;
 }
-.services__inner-box img {
+.services__inner-box img, .services__inner-box i {
   position: absolute;
-  width: 2.4rem;
-  height: 2.4rem;
   left: 0;
   top: 0;
+  transform: translate(-50%, -10%);
+  color: var(--orange);
+  font-size: 3rem;
 }
 .services--img-left, .services--img-right {
   position: absolute;
@@ -808,20 +809,27 @@ body {
 .ipContent__block {
   width: 34rem;
   height: 20rem;
-  text-align: center;
   padding: 0 1.3rem;
+}
+.ipContent__block span {
+  color: var(--orange);
 }
 .ipContent__block-num {
   display: inline-block;
   font-size: 3.6rem;
   line-height: 1.2;
-  letter-spacing: 0.33px;
-  margin-bottom: 1.6rem10;
+  letter-spacing: 0.1px;
+  margin-bottom: 1.6rem;
+  text-align: left;
+  padding-left: 4rem;
+  font-weight: 700;
 }
 .ipContent__block-text {
+  text-align: center;
   line-height: 1.4;
   font-size: 1.8rem;
   text-align: left;
+  text-indent: 3rem;
 }
 
 .vats-section {
@@ -1130,6 +1138,9 @@ body {
   font-size: 2.6rem;
   margin-bottom: 3.15rem;
 }
+.helper__content h2 span {
+  color: var(--orange);
+}
 .helper__content p {
   font-size: 1.8rem;
   letter-spacing: 0.2px;
@@ -1155,6 +1166,16 @@ body {
   letter-spacing: 0.2px;
   margin-bottom: 1rem;
   font-weight: 400;
+}
+.helper__content-wrap--box i {
+  font-size: 3rem;
+  padding-left: 4rem;
+  color: var(--orange);
+  margin-bottom: 1rem;
+}
+.helper__content-wrap--box i:last-child {
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 .formEmail-section {
