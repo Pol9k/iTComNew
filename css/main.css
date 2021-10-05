@@ -228,7 +228,7 @@ body {
 }
 
 .title-big {
-  font-size: 7rem;
+  font-size: 10rem;
   line-height: 1.2;
   font-family: var(--ff-text);
   color: var(--blue-h1);
@@ -449,7 +449,7 @@ body {
 .titleSection__text {
   max-width: 80rem;
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 10rem;
   position: relative;
   text-align: left;
   display: flex;
@@ -461,15 +461,26 @@ body {
   font-size: 1.8rem;
 }
 .titleSection__text-title {
-  padding: 3rem 0;
-  line-height: 1.2;
-  max-width: 55rem;
+  position: relative;
+  padding: 0 0 3rem 0;
+  line-height: 1;
+  max-width: 60rem;
+  font-size: 7rem;
   width: 100%;
 }
 .titleSection__text-title span {
   color: #f2994A;
-  font-size: 6rem;
-  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.titleSection__text-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  width: 20%;
+  height: 0.2rem;
+  background: var(--orange);
 }
 .titleSection__text-bottom {
   font-size: 1.8rem;
@@ -484,6 +495,13 @@ body {
   font-weight: 600;
   padding-left: 1rem;
   font-size: 1.8rem;
+  min-height: 10rem;
+}
+.titleSection__text-bottom--block li:nth-child(2) {
+  margin: auto 0;
+}
+.titleSection__text-bottom--block li:last-child {
+  margin-top: auto;
 }
 .titleSection__text-bottom--block li p {
   color: var(--blue2-p);
@@ -495,9 +513,9 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -0.5rem;
-  color: #99EFD0;
-  font-size: 1.2rem;
+  left: -1rem;
+  color: var(--orange);
+  font-size: 1.8rem;
 }
 .titleSection__img {
   max-width: 20rem;
