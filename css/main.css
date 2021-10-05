@@ -980,6 +980,11 @@ body {
   color: #13C296;
   margin-bottom: 0.5rem;
 }
+.vatsSecond__cards-inner--block---num p span {
+  font-size: 1.2rem;
+  color: #212B36;
+  letter-spacing: normal;
+}
 .vatsSecond__cards-inner--block---num span {
   font-weight: 700;
   font-size: 1rem;
@@ -997,9 +1002,10 @@ body {
 }
 .vatsSecond__cards-inner--block---proc div {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.7rem;
   color: #212B36;
@@ -1013,8 +1019,8 @@ body {
 }
 .vatsSecond__cards-innerRight {
   position: absolute;
-  right: 0;
-  bottom: 10.3rem;
+  right: -2rem;
+  bottom: 6.3rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 3.1rem;
@@ -1032,7 +1038,16 @@ body {
   line-height: 1.4rem;
   font-size: 1rem;
   letter-spacing: 0.05rem;
+  font-weight: 700;
   opacity: 0.8;
+  text-align: center;
+}
+.vatsSecond__cards-innerRight p:last-child span {
+  font-size: 1.6rem;
+  font-weight: 800;
+  line-clamp: -.1rem;
+  color: var(--orange);
+  opacity: 1;
 }
 .vatsSecond__cards-row {
   position: absolute;
