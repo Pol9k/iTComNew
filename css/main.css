@@ -207,6 +207,7 @@ select {
   --green: #0f0;
   --ff-h: 'Inter', sans-serif;
   --ff-text: 'Source Code Pro', monospace;
+  --ff-title: 'Rubik', sans-serif;
 }
 
 body {
@@ -230,7 +231,7 @@ body {
 .title-big {
   font-size: 10rem;
   line-height: 1.2;
-  font-family: var(--ff-text);
+  font-family: var(--ff-title);
   color: var(--blue-h1);
   font-weight: 700;
   letter-spacing: -.1rem;
@@ -466,12 +467,16 @@ body {
   line-height: 1;
   max-width: 60rem;
   font-size: 7rem;
+  font-weight: 400;
   width: 100%;
 }
 .titleSection__text-title span {
   color: #f2994A;
-  text-transform: uppercase;
   font-weight: 700;
+  -webkit-text-stroke: 0.1rem #3B1D60;
+}
+.titleSection__text-title span:first {
+  text-transform: uppercase;
 }
 .titleSection__text-title::after {
   content: '';
@@ -683,9 +688,12 @@ body {
   margin-bottom: 3.2rem;
   text-align: left;
   line-height: 1.2;
+  font-family: var(--ff-title);
+  font-weight: 400;
 }
 .ip__block-title span {
   color: #f2994A;
+  font-weight: 600;
 }
 .ip__block-text {
   margin-bottom: 4.3rem;
@@ -968,7 +976,7 @@ body {
   line-height: 1.4rem;
   color: #637381;
   letter-spacing: .05rem;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.5rem;
 }
 .vatsSecond__cards-inner--block---num {
   display: block;
@@ -978,7 +986,7 @@ body {
   font-size: 2.4rem;
   font-weight: 600;
   color: #13C296;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
 }
 .vatsSecond__cards-inner--block---num p span {
   font-size: 1.2rem;
@@ -987,14 +995,20 @@ body {
 }
 .vatsSecond__cards-inner--block---num span {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.2;
   letter-spacing: 0.05rem;
-  color: #98A4AF;
+  color: #212B36;
   text-transform: uppercase;
 }
+.vatsSecond__cards-inner--block---num span strong {
+  font-size: 2rem;
+  color: var(--orange);
+  letter-spacing: -0.05rem;
+}
 .vatsSecond__cards-inner--block---proc {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #D6DBDF;
@@ -1005,7 +1019,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   line-height: 1.7rem;
   color: #212B36;
@@ -1013,14 +1027,16 @@ body {
 .vatsSecond__cards-inner--block---proc span {
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.4rem;
+  line-height: 1;
   letter-spacing: 0.05rem;
   color: #637381;
+  font-weight: 600;
+  margin-top: 0.5rem;
 }
 .vatsSecond__cards-innerRight {
   position: absolute;
   right: -2rem;
-  bottom: 6.3rem;
+  bottom: 9.5rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 3.1rem;
