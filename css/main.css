@@ -440,6 +440,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 .titleSection__row {
   display: flex;
@@ -786,22 +787,23 @@ body {
 }
 .ip__benefits-title {
   text-align: left;
-  margin-bottom: 5rem;
+  margin-bottom: 6rem;
 }
 .ip__benefits-wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-grow: 2rem;
 }
 .ip__benefits-box {
-  height: 28rem;
+  min-height: 28rem;
   max-width: 360px;
   width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 .ip__benefits-box--title {
   text-indent: 2rem;
@@ -817,28 +819,40 @@ body {
   border-radius: 1rem;
   background: var(--orange);
   z-index: 99;
+  transition: .5s;
 }
 .ip__benefits-box--num {
   font-size: 6rem;
   font-weight: 700;
-  position: absolute;
-  left: 4rem;
-  top: 3rem;
+  padding-left: 2rem;
   font-family: var(--ff-title);
   color: var(--blue-h1);
   opacity: .6;
+  transition: .3s;
 }
 .ip__benefits-box--num span {
   font-size: 2rem;
 }
 .ip__benefits-box--text {
-  padding: .5rem 0;
+  padding: 1rem .5rem;
   margin-left: auto;
   max-width: 320px;
   width: 100%;
+  line-height: 1.4;
+  transition: .3s;
 }
 .ip__benefits-box--text p {
   text-indent: 2rem;
+}
+.ip__benefits-box:hover .ip__benefits-box--num {
+  opacity: 1;
+}
+.ip__benefits-box:hover .ip__benefits-box--title::before {
+  transform: rotate(360deg);
+}
+.ip__benefits-box:hover .ip__benefits-box--text {
+  color: var(--blue-h1);
+  transform: translateY(-2rem);
 }
 
 .ipContent-section {
@@ -899,22 +913,21 @@ body {
   align-items: center;
 }
 .ipContent__block {
-  width: 34rem;
+  max-width: 34rem;
+  width: 100%;
   height: 20rem;
-  padding: 0 1.3rem;
-}
-.ipContent__block span {
-  color: var(--orange);
+  padding: 0 0.3rem;
 }
 .ipContent__block-num {
   display: inline-block;
   font-size: 4.6rem;
   line-height: 1.2;
-  letter-spacing: -5px;
+  letter-spacing: -.5px;
   margin-bottom: 1.6rem;
   text-align: left;
   padding-left: 4rem;
   font-weight: 700;
+  color: var(--orange);
 }
 .ipContent__block-text {
   text-align: center;
@@ -1411,9 +1424,6 @@ body {
   .helper__content {
     width: 71.5rem;
     padding: 1rem 2rem;
-    backdrop-filter: blur(3px) saturate(4%);
-    -webkit-backdrop-filter: blur(3px) saturate(4%);
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 12px;
   }
 
@@ -1454,7 +1464,38 @@ body {
     font-size: 3rem;
   }
 }
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 980px) {
+  .ip__benefits-box--text,
+  .ipContent__block-text {
+    font-size: 1.4rem;
+  }
+
+  .ip__benefits-box {
+    margin-bottom: 4rem;
+  }
+
+  .ipContent__blocks {
+    margin-bottom: 5rem;
+  }
+
+  .ipContent__block-num {
+    padding-left: .5rem;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .ip__benefits-wrap {
+    flex-wrap: wrap;
+  }
+
+  .ip-section {
+    padding-bottom: 0;
+  }
+
+  .helper__content {
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 889px) {
   .titleSection__img-image {
     opacity: 0.5;
   }
@@ -1467,6 +1508,20 @@ body {
 
   .ipContent-title {
     font-size: 3rem;
+  }
+
+  .ip__benefits {
+    margin-top: 5rem;
+    padding: 3rem 0 .5rem;
+  }
+
+  .ipContent__block-num {
+    font-size: 3.6rem;
+  }
+
+  .ipContent-section {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .vatsSecond__cards {
@@ -1489,18 +1544,12 @@ body {
     padding: 0.5rem 1.5rem;
   }
 
-  .vatsSecond::before {
-    content: '';
-    position: absolute;
-    top: 1rem;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(3px) saturate(4%);
-    -webkit-backdrop-filter: blur(3px) saturate(4%);
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 12px;
-    z-index: -1;
+  .vatsSecond__cards {
+    display: none;
+  }
+
+  .helper__pictures {
+    display: none;
   }
 
   .vatsSecond__content-title {
@@ -1510,12 +1559,17 @@ body {
   .formEmail__block-title {
     font-size: 2.2rem;
   }
-}
-@media only screen and (max-width: 740px) {
-  .ip-section {
-    padding: 10rem 0;
+
+  .vats-section {
+    margin: 0;
+    padding: 0;
   }
 
+  .ip__block {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 740px) {
   .ip__block {
     position: relative;
     z-index: 9;
@@ -1569,6 +1623,10 @@ body {
   .formEmail__block {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .services__inner {
+    grid-column-gap: 1rem;
   }
 }
 @media only screen and (max-width: 563px) {
@@ -1634,6 +1692,10 @@ body {
   .formEmail__block .formEmail__block-box {
     width: 100%;
   }
+
+  .ip__right-elem--third {
+    display: none;
+  }
 }
 @media only screen and (max-width: 510px) {
   .titleSection {
@@ -1659,10 +1721,6 @@ body {
     line-height: 1.2;
   }
 
-  .titleSection__text-bottom--block li {
-    margin-bottom: 2rem;
-  }
-
   .titleSection__text-bottom--block li p {
     font-size: 1.5rem;
     line-height: 1;
@@ -1675,6 +1733,19 @@ body {
   .ip__block-text {
     color: var(--blue-white);
     letter-spacing: -.1rem;
+    font-size: 1.4rem;
+  }
+
+  .ip-section {
+    padding-bottom: 0;
+  }
+
+  .ip__benefits-box--num {
+    font-size: 4rem;
+  }
+
+  .ip__benefits-box {
+    min-height: 22rem;
   }
 
   .ipContent-text {
