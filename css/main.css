@@ -205,6 +205,8 @@ select {
   --orange: #f2994A;
   --red: #f00;
   --green: #0f0;
+  --telegram-color:#0088cc;
+  --viber-color: #00d8ff;
   --ff-h: 'Inter', sans-serif;
   --ff-text: 'Source Code Pro', monospace;
   --ff-title: 'Rubik', sans-serif;
@@ -482,11 +484,22 @@ body {
 .titleSection__text-title::after {
   content: '';
   position: absolute;
-  left: 0;
+  left: -1rem;
   bottom: 1rem;
   width: 20%;
   height: 0.2rem;
   background: var(--orange);
+  background: linear-gradient(to left, var(--orange), transparent);
+}
+.titleSection__text-title::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  width: 20%;
+  height: 0.2rem;
+  background: var(--orange);
+  background: linear-gradient(to right, var(--orange), transparent);
 }
 .titleSection__text-bottom {
   font-size: 1.8rem;
@@ -772,8 +785,8 @@ body {
   z-index: 2;
 }
 .ip__right:hover .ip__right-elem--first {
-  left: -13rem;
-  top: -10rem;
+  left: -6rem;
+  top: -2rem;
 }
 .ip__right:hover .ip__right-elem--second {
   bottom: -5rem;
@@ -1379,7 +1392,7 @@ body {
 }
 .formEmail__block {
   position: relative;
-  padding: 5.5rem 0;
+  padding: 5.5rem 0 10rem;
   margin: 0 4rem;
   width: 100%;
   background: rgba(60, 62, 125, 0.4);
@@ -1441,12 +1454,75 @@ body {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-.formEmail__block-box-noSpan {
-  margin-top: 1.6rem;
-  font-size: 1.4rem;
-  letter-spacing: 0.2px;
+.formEmail__block-social {
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  left: 2rem;
+  bottom: 0.5rem;
+  column-gap: 3rem;
+}
+.formEmail__block-social--text {
+  font-size: 2rem;
+  color: var(--orange);
+}
+.formEmail__block-social--icons {
+  display: flex;
+  column-gap: 2rem;
+  font-size: 5rem;
+}
+.formEmail__block-social--icons a {
+  animation: animateJampe 3s infinite;
+}
+.formEmail__block-social--icons a:last-child {
+  animation-delay: 1.5s;
+}
+.formEmail__block-social--icons .fa-telegram-plane {
+  color: var(--telegram-color);
+  opacity: .8;
+  transition: .3s;
+}
+.formEmail__block-social--icons .fa-telegram-plane:hover {
+  opacity: 1;
+}
+.formEmail__block-social--icons .fa-viber {
+  color: var(--viber-color);
+  opacity: .8;
+  transition: .3s;
+}
+.formEmail__block-social--icons .fa-viber:hover {
+  opacity: 1;
 }
 
+@keyframes animateJampe {
+  0% {
+    transform: translateY(-0.1rem);
+  }
+  20% {
+    transform: translateY(-0.2rem);
+  }
+  40% {
+    transform: translateY(-0.4rem);
+  }
+  50% {
+    transform: translateY(-0.2rem);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(0.2rem);
+  }
+  80% {
+    transform: translateY(0.4rem);
+  }
+  90% {
+    transform: translateY(0.2rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media only screen and (max-width: 1100px) {
   .helper {
     justify-content: center;
