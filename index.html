@@ -27,20 +27,24 @@
           <h6 class="header__row-logo--title">IT<span>com</span></h6>
           <p class="header__row-logo--text">for Bussines</p>
         </a>
-        <nav class="header__row-navigation">
-          <ul class="header__row-navigation-items">
-            <li class="header__row-navigation--link active">
-              <a href="#startPage">Услуги</a>
+        <nav class="header__row-navigation" id="nav-menu">
+          <ul class="header__row-navigation-items" >
+            <li class="header__row-navigation--link active-link">
+              <a href="#startPage">Старт</a>
+            </li>
+            <li class="header__row-navigation--link">
+              <a href="#services">Услуги</a>
             </li>
             <li class="header__row-navigation--link">
               <a href="#ip-section">ip</a>
             </li>
             <li class="header__row-navigation--link">
-              <a href="#formEmail">pricing</a>
+            <a href="#vats">атс</a>
             </li>
             <li class="header__row-navigation--link">
-              <a href="#!">else</a>
+              <a href="#formEmail">Прайс</a>
             </li>
+            
             <li class="header__row-navigation--link">
               <a href="#contacts">Contact</a>
             </li>
@@ -182,7 +186,7 @@
               <h4 class="ip__benefits-box--title title-h4">Многоканальность:</h4>
               <p class="ip__benefits-box--num">25<span>грн. за</span>3<span>линии</span></p>
               <div class="ip__benefits-box--text">
-                <p>можно использовать один номер на всю компанию использую доп.услугу многоканальность. Вы всегда получите звонок даже если пару линий заняты ...</p>
+                <p>можно использовать <span>один номер</span> на всю компанию использую услугу многоканальность. Вы <b>всегда получите звонок</b> даже если пару линий заняты ...</p>
               </div>
             </div>
           </div>
@@ -231,7 +235,7 @@
       </div>
     </section>
      
-    <section class="vats-section">
+    <section class="vats-section" id="vats">
       <div class="container">
         <div class="vats">
           <h2 class="vats-title title-h2">
@@ -420,7 +424,10 @@
         </div>
       </div>
     </footer>
-
+    <a href="#startPage" class="scrollup" id="scroll-up">
+      <!-- <i class="fas fa-chevron-up"></i> -->
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </main>
 
   <script src="js/main.js"></script>
