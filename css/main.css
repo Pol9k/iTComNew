@@ -206,7 +206,7 @@ select {
   --red: #f00;
   --green: #0f0;
   --telegram-color:#0088cc;
-  --viber-color: #00d8ff;
+  --viber-color: #B0B0B0;
   --ff-h: 'Inter', sans-serif;
   --ff-text: 'Source Code Pro', monospace;
   --ff-title: 'Rubik', sans-serif;
@@ -820,6 +820,8 @@ body {
 }
 .ip__benefits-box--title {
   text-indent: 2rem;
+  color: var(--blue-p);
+  transition: .3s;
 }
 .ip__benefits-box--title::before {
   content: '';
@@ -872,6 +874,13 @@ body {
   top: 50%;
   transform: translateY(-50%);
   background: var(--orange);
+}
+.ip__benefits-box--text---line span {
+  color: var(--orange);
+  font-weight: 700;
+}
+.ip__benefits-box:hover .ip__benefits-box--title {
+  color: var(--blue-h1);
 }
 .ip__benefits-box:hover .ip__benefits-box--num {
   opacity: 1;
@@ -1745,6 +1754,14 @@ body {
 
   .vats-section {
     padding-top: 0;
+  }
+
+  .vats-rain {
+    width: 200px;
+  }
+
+  .vats-circle {
+    width: 260px;
   }
 
   .helper__content p {
