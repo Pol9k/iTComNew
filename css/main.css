@@ -653,8 +653,12 @@ body {
 }
 .services__inner-box--text {
   font-size: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.4;
   transition: .3s;
+  font-weight: 700;
+}
+.services__inner-box--text span {
+  color: var(--telegram-color);
 }
 .services__inner-box--icon {
   position: absolute;
