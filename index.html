@@ -83,6 +83,35 @@
         </div>
       </div>
     </section>
+
+    <div class="ipContent__blocks container">
+      <div class="ipContent__block">
+        <span class="ipContent__block-num title-h4">
+          7 200 000
+        </span>
+        <p class="ipContent__block-text">
+          минут в месяц - это общая сумма исходящих звонков нашими клиентами.
+        </p>
+      </div>
+
+      <div class="ipContent__block">
+        <span class="ipContent__block-num title-h4">
+          10 000 +
+        </span>
+        <p class="ipContent__block-text">
+          клиентов пользуется услугой sip телефонией по всей территори Украины используя городскую, мобильную и номера 0-800 ...
+        </p>
+      </div>
+      
+      <div class="ipContent__block">
+        <span class="ipContent__block-num title-h4">
+          20 +
+        </span>
+        <p class="ipContent__block-text">
+          лет, мы предоставляем телекоммуникационные услуги на рынке Украины! 
+        </p>
+      </div>
+    </div>
     <section class="service-section" id="services"> 
       <div class="container">
         <div class="services">
@@ -167,7 +196,6 @@
               <h4 class="ip__benefits-box--title title-h4">Выгодные тарифы:</h4>
               <p class="ip__benefits-box--num">0,30<span>грн./мин.</span> </p>
               <div class="ip__benefits-box--text">
-                <!-- <p> за минуту;</p> -->
                 <ul>
                   <li class="ip__benefits-box--text---line"><span>посекундная</span> тарификация;</li>
                   <li class="ip__benefits-box--text---line">трафик увеличивается - стоимость минуты <span>снижается</span>;</li>
@@ -203,34 +231,16 @@
           <p class="ipContent-text">
             Стабильная/качественная связь, приём звонка без дополнительного оборудования, клиенты всегда дозвонятся, интеграция с вашей CRM, подключение любого номера (городской/мобильный/0-800), многоканальность, экономия на стоимости звонка и многое другое.
           </p>
-          <div class="ipContent__blocks">
-            <div class="ipContent__block">
-              <span class="ipContent__block-num title-h4">
-                7 200 000
-              </span>
-              <p class="ipContent__block-text">
-                минут в месяц - это общая сумма исходящих звонков нашими клиентами.
-              </p>
-            </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="ipContent__block">
-              <span class="ipContent__block-num title-h4">
-                10 000 +
-              </span>
-              <p class="ipContent__block-text">
-                клиентов пользуется услугой sip телефонией по всей территори Украины используя городскую, мобильную и номера 0-800 ...
-              </p>
-            </div>
-            
-            <div class="ipContent__block">
-              <span class="ipContent__block-num title-h4">
-                20 +
-              </span>
-              <p class="ipContent__block-text">
-                лет, мы предоставляем телекоммуникационные услуги на рынке Украины! 
-              </p>
-            </div>
-          </div>
+    <section class="num0800-section" id="num0800">
+      <div class="container">
+        <div class="num0800">
+          <h2 class="num0800-title title-h2">
+            Условия номера <span>0800</span> 
+          </h2>
         </div>
       </div>
     </section>
@@ -348,7 +358,13 @@
             </h3>
 
             <form class="formEmail__block-box">
-              <input type="@mail" placeholder="mail@..." required="required">
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Site itCOM">
+              <input type="hidden" name="admin_email" value="itcorp.stu@gmail.com">
+              <input type="hidden" name="form_subject" value="ITcom">
+              <!-- END Hidden Required Fields -->
+
+              <input type="email" name="@email" placeholder="mail@..." required>
               <button class="button" type="submit">Отправить</button>
             </form>
             <div class="formEmail__block-social">
@@ -356,8 +372,8 @@
                 либо напишите нам ... 
               </p>
               <div class="formEmail__block-social--icons">
-                <a href="#!"><i class="fab fa-telegram-plane"></i></a>
-                <a href="#!"><i class="fab fa-viber"></i></a>
+                <a href="https://t.me/joinchat/NnZgH-A_7-o1NjM6"><i class="fab fa-telegram-plane"></i></a>
+                <a href="https://t.me/joinchat/NnZgH-A_7-o1NjM6"><i class="fab fa-viber"></i></a>
               </div>
               
               
@@ -425,11 +441,10 @@
       </div>
     </footer>
     <a href="#startPage" class="scrollup" id="scroll-up">
-      <!-- <i class="fas fa-chevron-up"></i> -->
       <i class="fas fa-arrow-up"></i>
     </a>
   </main>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="js/main.js"></script>
   
 </body>
