@@ -757,12 +757,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1rem;
 }
 .ip__block {
-  width: 47rem;
-  margin-right: 5.8rem;
+  max-width: 47rem;
+  width: 100%;
+  position: relative;
+}
+.ip__block-dotsIMG {
+  position: absolute;
+  width: 10rem;
+  left: -8rem;
+  top: -1rem;
+  z-index: -1;
+}
+.ip__block-phoneIMG {
+  position: absolute;
+  font-size: 6rem;
+  left: -15rem;
+  top: -3rem;
+  transform: rotate(-20deg);
+  opacity: .5;
+  z-index: 1;
 }
 .ip__block-title {
+  position: relative;
   margin-bottom: 3.2rem;
   text-align: left;
   line-height: 1.2;
@@ -770,6 +789,7 @@ body {
   letter-spacing: -.05rem;
   font-weight: 600;
   font-size: 3.2rem;
+  z-index: 999;
 }
 .ip__block-title span {
   color: #f2994A;
@@ -842,7 +862,7 @@ body {
   z-index: 2;
 }
 .ip__right:hover .ip__right-elem--first {
-  left: -6rem;
+  left: -3rem;
   top: -2rem;
 }
 .ip__right:hover .ip__right-elem--second {
@@ -969,7 +989,7 @@ body {
   left: 0;
   background: url(../images/stratPage/ip/bg-left.png) no-repeat center;
   background-size: cover;
-  z-index: -1;
+  z-index: 0;
 }
 
 .ipContent {
@@ -2097,18 +2117,38 @@ body {
 }
 
 .num0800-title {
-  max-width: 80rem;
   width: 100%;
+  padding-left: 4rem;
+  position: relative;
+}
+.num0800-title-dotsIMG {
+  position: absolute;
+  width: 10rem;
+  left: -3rem;
+  top: -2rem;
+  z-index: 1;
+}
+.num0800-title--icon {
+  position: absolute;
+  font-size: 6rem;
+  left: -8rem;
+  top: -4rem;
+  transform: rotate(-20deg);
+  opacity: .5;
+  z-index: 2;
+}
+.num0800-title h2 {
+  position: relative;
   text-align: right;
   letter-spacing: -.05rem;
   line-height: 1.2;
   font-weight: 600;
   font-size: 3.2rem;
-  padding-left: 2rem;
+  z-index: 9;
 }
-.num0800-title span {
-  font-size: 8rem;
-  font-weight: 700;
+.num0800-title h2 span {
+  font-size: 7rem;
+  font-weight: 600;
   font-family: var(--ff-title);
   color: var(--orange);
 }

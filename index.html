@@ -31,21 +31,23 @@
         <nav class="header__row-navigation" id="nav-menu">
           <ul class="header__row-navigation-items" >
             <li class="header__row-navigation--link active-link">
-              <a href="#startPage">Старт</a>
+              <a href="#start">Старт</a>
             </li>
             <li class="header__row-navigation--link">
               <a href="#services">Услуги</a>
             </li>
             <li class="header__row-navigation--link">
-              <a href="#ip-section">ip</a>
+              <a href="#ip">ip</a>
             </li>
             <li class="header__row-navigation--link">
-            <a href="#vats">атс</a>
+            <a href="#num0800">0-800</a>
+            </li>
+            <li class="header__row-navigation--link">
+              <a href="#vats">ВАТС</a>
             </li>
             <li class="header__row-navigation--link">
               <a href="#formEmail">Прайс</a>
             </li>
-            
             <li class="header__row-navigation--link">
               <a href="#contacts">Contact</a>
             </li>
@@ -61,7 +63,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="titleSection" id="startPage">
+    <section class="titleSection" id="start">
       <div class="container">
         <div class="titleSection__row">
           <div class="titleSection__text">
@@ -113,6 +115,7 @@
         </p>
       </div>
     </div>
+
     <section class="service-section" id="services"> 
       <div class="container">
         <div class="services">
@@ -167,10 +170,13 @@
       </div>
     </section>
  
-    <section class="ip-section" id="ip-section">
+    <section class="ip-section" id="ip">
       <div class="container">
         <div class="ip">
           <div class="ip__block">
+            <img class="ip__block-dotsIMG" src="./images/stratPage/helper/2.png" alt="">
+            <i class="fa-solid fa-headset ip__block-phoneIMG"></i>
+
             <h2 class="ip__block-title title-h2">
               <span>IP</span> - телефония
             </h2>
@@ -220,18 +226,15 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="ipContent-section">
-      <div class="container">
-        <div class="ipContent">
-          <h3 class="ipContent-title title-h4">
-            С услугой <span>SIP</span> Вы <span>значительно</span> расширите <br> возможности <span>телефонии</span>
-          </h3>
-          <p class="ipContent-text">
-            Стабильная/качественная связь, приём звонка без дополнительного оборудования, клиенты всегда дозвонятся, интеграция с вашей CRM, подключение любого номера (городской/мобильный/0-800), многоканальность, экономия на стоимости звонка и многое другое.
-          </p>
+        <div class="ipContent-section">
+          <div class="ipContent">
+            <h3 class="ipContent-title title-h4">
+              С услугой <span>SIP</span> Вы <span>значительно</span> расширите <br> возможности <span>телефонии</span>
+            </h3>
+            <p class="ipContent-text">
+              Стабильная/качественная связь, приём звонка без дополнительного оборудования, клиенты всегда дозвонятся, интеграция с вашей CRM, подключение любого номера (городской/мобильный/0-800), многоканальность, экономия на стоимости звонка и многое другое.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -239,9 +242,14 @@
     <section class="num0800-section" id="num0800">
       <div class="container">
         <div class="num0800">
-          <h2 class="num0800-title title-h2">
-            <span>0-800</span> номер - удвойте колличество входящих звонков 
-          </h2>
+          <div class="num0800-title">
+            <img class="num0800-title-dotsIMG" src="./images/stratPage/helper/2.png" alt="">
+            <i class="fas fa-mobile-alt num0800-title--icon"></i>
+            <h2 class="title-h2">
+              <span>0-800</span> номер - удвойте колличество входящих звонков 
+            </h2>
+            <img src="" alt="">
+          </div>
           <div class="num0800-content">
             <ul class="num0800__details">
               <li class="num0800__details-description">
@@ -584,7 +592,7 @@
         </div>
       </div>
     </footer>
-    <a href="#startPage" class="scrollup" id="scroll-up">
+    <a href="#start" class="scrollup" id="scroll-up">
       <i class="fas fa-arrow-up"></i>
     </a>
   </main>
