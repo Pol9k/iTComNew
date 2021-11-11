@@ -763,16 +763,18 @@ body {
   margin-right: 5.8rem;
 }
 .ip__block-title {
-  font-size: 7rem;
   margin-bottom: 3.2rem;
   text-align: left;
   line-height: 1.2;
   font-family: var(--ff-title);
-  font-weight: 400;
+  letter-spacing: -.05rem;
+  font-weight: 600;
+  font-size: 3.2rem;
 }
 .ip__block-title span {
   color: #f2994A;
   font-weight: 600;
+  font-size: 7rem;
 }
 .ip__block-text {
   margin-bottom: 4.3rem;
@@ -2140,8 +2142,10 @@ body {
   text-align: center;
 }
 .num0800__advantages-box--list {
+  font-size: 2rem;
+  line-height: 1.4;
   text-indent: .5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 .num0800__advantages-box--list i {
@@ -2177,9 +2181,10 @@ body {
 }
 .num0800__price-block-box--title {
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: right;
-  line-height: 1.1;
+  line-height: 1.2;
+  letter-spacing: -.2rem;
 }
 .num0800__price-block-box:hover .num0800__price-block-box--num {
   opacity: 1;
@@ -2218,6 +2223,7 @@ body {
 .num0800__multichannel-price--box {
   position: relative;
   padding: 0 .5rem;
+  transition: .3s;
 }
 .num0800__multichannel-price--box---num {
   text-align: center;
@@ -2256,13 +2262,16 @@ body {
   bottom: 0;
   left: -1.5rem;
 }
+.num0800__multichannel-price--box:hover {
+  transform: translateY(-0.3rem);
+}
 .num0800__multichannel-price--box p:last-child {
   font-size: 2rem;
 }
 
 .num0800__multichannel-activetion {
   font-size: 2rem;
-  text-align: center;
+  text-align: right;
 }
 
 .footer-section {
